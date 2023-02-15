@@ -15,4 +15,4 @@ $ yarn preview # serve the build
 ```
 You can see that the app failed to laod `/nested/monacoeditorwork/json.worker.bundle.js`. But if you try to open `/nested/nested/monacoeditorwork/json.worker.bundle.js` (notice the doubled `/nested`), you'll be presented with the code for the worker.
 
-Then, you can try the fix I'm using, by uncomenting the config in `vite.config.js`.
+Then, you can try the fix I'm using, by uncomenting the config for the plugin in `vite.config.js`. If you repeat now the steps `yarn build`/`yarn preview`, you'll no longer see erros in the console, and the `/nested/monacoeditorwork/json.worker.bundle.js` path will work out of the box.
